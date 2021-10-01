@@ -28,7 +28,7 @@ public class Main {
 
 			System.out.println("\n*** 새 데이터 추가 ***");
 			Statement stat2 = con.createStatement();
-			String sql2 = "insert into g_artists (name, a_type, a_year, debut, regdate)" + " values ('정승환', 'M', '2010s, 2020s', '2015', datetime('now', 'localtime'));";
+			String sql2 = "insert into g_artists (name, a_type, a_year, debut, regdate)" + " values ('권진아', 'F', '2010s, 2020s', '2016', datetime('now', 'localtime'));";
 			int cnt = stat2.executeUpdate(sql2);
 			if(cnt > 0)
 				System.out.println("새로운 데이터가 추가되었습니다!");
